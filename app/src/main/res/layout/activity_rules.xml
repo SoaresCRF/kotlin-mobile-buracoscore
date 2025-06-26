@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activity"
+    android:fillViewport="true"
+    tools:context=".ui.activity.RulesActivity">
+
+    <LinearLayout
+        android:id="@+id/rulesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <!-- Aberto -->
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/header_open_canasta" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TextItem"
+            android:text="@string/rule_open_canasta_1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextItem"
+            android:text="@string/rule_open_canasta_2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextItem"
+            android:text="@string/rule_open_canasta_3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TextItem"
+            android:text="@string/rule_open_canasta_4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TextItem"
+            android:text="@string/rule_open_canasta_5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/TextItem"
+            android:text="@string/rule_open_canasta_6" />
+
+        <!-- Aberto Sujo -->
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/header_open_dirty_canasta" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/TextItem"
+            android:text="@string/rule_open_dirty_canasta_1" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/TextItem"
+            android:text="@string/rule_open_dirty_canasta_2" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/TextItem"
+            android:text="@string/rule_open_dirty_canasta_3" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/TextItem"
+            android:text="@string/rule_open_dirty_canasta_4" />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/TextItem"
+            android:text="@string/rule_open_dirty_canasta_5" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/TextItem"
+            android:text="@string/rule_open_dirty_canasta_6" />
+
+        <!-- Fechado -->
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/header_closed_canasta" />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_canasta_1" />
+
+        <TextView
+            android:id="@+id/textView14"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_canasta_2" />
+
+        <TextView
+            android:id="@+id/textView15"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_canasta_3" />
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_canasta_4" />
+
+        <TextView
+            android:id="@+id/textView17"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_canasta_5" />
+
+        <TextView
+            android:id="@+id/textView18"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_canasta_6" />
+
+        <!-- Fechado STBL -->
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/header_closed_stbl_canasta" />
+
+        <TextView
+            android:id="@+id/textView19"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_stbl_canasta_1" />
+
+        <TextView
+            android:id="@+id/textView20"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_stbl_canasta_2" />
+
+        <TextView
+            android:id="@+id/textView21"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_stbl_canasta_3" />
+
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_stbl_canasta_4" />
+
+        <TextView
+            android:id="@+id/textView23"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_stbl_canasta_5" />
+
+        <TextView
+            android:id="@+id/textView24"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_stbl_canasta_6" />
+
+        <!-- Fechado Sujo -->
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/header_closed_dirty_canasta" />
+
+        <TextView
+            android:id="@+id/textView25"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_dirty_canasta_1" />
+
+        <TextView
+            android:id="@+id/textView26"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_dirty_canasta_2" />
+
+        <TextView
+            android:id="@+id/textView27"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_dirty_canasta_3" />
+
+        <TextView
+            android:id="@+id/textView28"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_dirty_canasta_4" />
+
+        <TextView
+            android:id="@+id/textView29"
+            style="@style/TextItem"
+            android:text="@string/rule_closed_dirty_canasta_5" />
+
+        <TextView
+            android:id="@+id/textView30"
+            style="@style/TextItem"
+            android:layout_marginBottom="20dp"
+            android:text="@string/rule_closed_dirty_canasta_6" />
+
+    </LinearLayout>
+</ScrollView>

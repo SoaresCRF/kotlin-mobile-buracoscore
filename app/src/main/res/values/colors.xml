@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Cores básicas -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Cores de fundo -->
+    <color name="background_activity">#F6EEDE</color>
+
+    <!-- Cores de texto para ações -->
+    <color name="text_action_add">#4C6E46</color>
+    <color name="text_action_remove">#FF0000</color>
+
+    <!-- Cores de botões e status de jogo -->
+    <color name="button">#4C6E46</color>
+    <color name="win">#4C6E46</color>
+    <color name="defeat">#FF0000</color>
+    <color name="draw">#616161</color>
+
+    <!-- Cores neutras -->
+    <color name="dark_gray">#616161</color>
+    <color name="light_gray">#BDBDBD</color>
+
+    <!-- Cores do Switch -->
+    <color name="switch_thumb_on">#424242</color>
+    <color name="switch_track_on">#757575</color>
+
+    <color name="switch_thumb_off">#555555</color>
+    <color name="switch_track_off">#9E9E9E</color>
+
+</resources>

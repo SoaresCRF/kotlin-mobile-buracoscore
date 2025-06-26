@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activity"
+    android:fillViewport="true"
+    tools:context=".ui.activity.ScoreInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/scoreInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextHeader"
+            android:layout_gravity="center"
+            android:text="@string/score_info_header" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/light_gray" />
+
+        <TextView
+            style="@style/SubTitle"
+            android:text="@string/score_info_add_points"
+            android:textColor="@color/text_action_add" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TextItem"
+            android:text="@string/score_info_add_1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextItem"
+            android:text="@string/score_info_add_2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextItem"
+            android:text="@string/score_info_add_3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TextItem"
+            android:text="@string/score_info_add_4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TextItem"
+            android:text="@string/score_info_add_5" />
+
+        <TextView
+            style="@style/SubTitle"
+            android:text="@string/score_info_remove_points"
+            android:textColor="@color/text_action_remove" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/TextItem"
+            android:text="@string/score_info_remove_1" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/TextItem"
+            android:text="@string/score_info_remove_2" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/TextItem"
+            android:text="@string/score_info_remove_3" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/TextItem"
+            android:text="@string/score_info_remove_4" />
+
+        <TextView
+            style="@style/TextHeader"
+            android:layout_gravity="center"
+            android:text="@string/score_info_values_header" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/light_gray" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_1" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_2" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_3" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_4" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_5" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_6" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_7" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_8" />
+
+        <TextView
+            style="@style/TextItem"
+            android:text="@string/score_info_value_9" />
+
+        <TextView
+            style="@style/TextItem"
+            android:layout_marginBottom="20dp"
+            android:text="@string/score_info_value_10" />
+
+    </LinearLayout>
+</ScrollView>

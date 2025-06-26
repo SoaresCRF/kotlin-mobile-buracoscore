@@ -1,0 +1,207 @@
+<resources>
+    <!-- Nome do aplicativo -->
+    <string name="app_name">Buraco Score</string>
+
+    <!-- ========== AddPointsActivity ========== -->
+    <string name="add_points_action_title">ADICIONAR PONTOS</string>
+    <string name="next">PRÓXIMO</string>
+    <string name="accessibility_next">Avançar para tela de remover pontos</string>
+
+    <!-- ========== RemovePointsActivity ========== -->
+    <string name="remove_points_action_title">REMOVER PONTOS</string>
+    <string name="calculate_score_button">CALCULAR PONTUAÇÃO</string>
+    <string name="accessibility_calculate_score_button">Calcular pontuação final</string>
+
+    <!-- ========== MainActivity ========== -->
+    <string name="fill_field">Preencha o campo!</string>
+    <string name="save_score">Salvar Pontuação</string>
+    <string name="calculate_score_before_save">Calcule a pontuação antes de salvar.</string>
+    <string name="confirmation">Confirmação!</string>
+    <string name="confirm_save_match">Deseja salvar a pontuação dessa partida?</string>
+    <string name="match_data_saved">Dados da partida salvos com sucesso!</string>
+    <string name="zero">0</string>
+
+    <!-- Acessibilidade - MainActivity -->
+    <string name="accessibility_canasta_rules">Regras do buraco (canastra)</string>
+    <string name="accessibility_view_history">Visualizar histórico de partidas salvas</string>
+    <string name="accessibility_score_screen">Tela de pontuação</string>
+    <string name="accessibility_edit_player_name">Editar nome do jogador</string>
+
+    <!-- ========== MatchHistoryActivity ========== -->
+    <string name="no_matches_found">Nenhuma partida encontrada.</string>
+    <string name="attention">Atenção!</string>
+    <string name="confirm_delete_all_message">Essa ação irá apagar todo o histórico de partidas. Deseja continuar?</string>
+    <string name="all_matches_deleted">Todo o histórico de partidas foi excluído com sucesso!</string>
+
+    <!-- Acessibilidade - MatchHistoryActivity -->
+    <string name="accessibility_delete_match_history">Apagar todo histórico de partidas salvas</string>
+
+    <!-- ========== Regras (activity_rules.xml) ========== -->
+
+    <!-- Cabeçalhos das regras -->
+    <string name="header_open_canasta">Aberto</string>
+    <string name="header_open_dirty_canasta">Aberto sujo</string>
+    <string name="header_closed_canasta">Fechado</string>
+    <string name="header_closed_stbl_canasta">Fechado STBL</string>
+    <string name="header_closed_dirty_canasta">Fechado sujo</string>
+
+    <!-- Regras por tipo de jogo -->
+    <!-- Aberto -->
+    <string name="rule_open_canasta_1">• Sem jokers.</string>
+    <string name="rule_open_canasta_2">• Só sequências (Sem trincas).</string>
+    <string name="rule_open_canasta_3">• É necessário canastra limpa para bater.</string>
+    <string name="rule_open_canasta_4">• Sequência de Ás a Ás é permitida.</string>
+    <string name="rule_open_canasta_5">• É possível bater descartando uma carta ou colocando-a em um jogo.</string>
+    <string name="rule_open_canasta_6">• Lixo aberto.</string>
+
+    <!-- Aberto Sujo -->
+    <string name="rule_open_dirty_canasta_1">• Com jokers.</string>
+    <string name="rule_open_dirty_canasta_2">• Sequências e trincas (Sem trincas de 2).</string>
+    <string name="rule_open_dirty_canasta_3">• É possível bater com canastra suja.</string>
+    <string name="rule_open_dirty_canasta_4">• Não é permitido sequência de Ás a Ás (permite-se Ás, 2 …, Q, K, 2/joker).</string>
+    <string name="rule_open_dirty_canasta_5">• É necessário descartar uma carta para poder bater.</string>
+    <string name="rule_open_dirty_canasta_6">• Lixo aberto.</string>
+
+    <!-- Fechado -->
+    <string name="rule_closed_canasta_1">• Com jokers.</string>
+    <string name="rule_closed_canasta_2">• Sequências e trincas.</string>
+    <string name="rule_closed_canasta_3">• É necessário canastra limpa para bater.</string>
+    <string name="rule_closed_canasta_4">• Sequência de Ás a Ás é permitida.</string>
+    <string name="rule_closed_canasta_5">• É possível bater descartando uma carta ou colocando-a em um jogo.</string>
+    <string name="rule_closed_canasta_6">• Lixo fechado: para pegar as cartas, é obrigatório abrir um jogo com a última.</string>
+
+    <!-- Fechado STBL -->
+    <string name="rule_closed_stbl_canasta_1">• Com jokers.</string>
+    <string name="rule_closed_stbl_canasta_2">• Só sequências (Sem trincas).</string>
+    <string name="rule_closed_stbl_canasta_3">• É necessário canastra limpa para bater.</string>
+    <string name="rule_closed_stbl_canasta_4">• Sequência de Ás a Ás é permitida.</string>
+    <string name="rule_closed_stbl_canasta_5">• É possível bater descartando uma carta ou colocando-a em um jogo.</string>
+    <string name="rule_closed_stbl_canasta_6">• Lixo fechado: abrir jogo com a última para pegar o lixo.</string>
+
+    <!-- Fechado Sujo -->
+    <string name="rule_closed_dirty_canasta_1">• Com jokers.</string>
+    <string name="rule_closed_dirty_canasta_2">• Sequências e trincas.</string>
+    <string name="rule_closed_dirty_canasta_3">• É possível bater com canastra suja.</string>
+    <string name="rule_closed_dirty_canasta_4">• Sequência de Ás a Ás é permitida.</string>
+    <string name="rule_closed_dirty_canasta_5">• É possível bater descartando uma carta ou colocando-a em um jogo.</string>
+    <string name="rule_closed_dirty_canasta_6">• Lixo fechado: abrir jogo com a última para pegar o lixo.</string>
+
+    <!-- ========== Informações de Pontuação (activity_score_info.xml) ========== -->
+    <string name="score_info_header">Como funciona?</string>
+    <string name="score_info_add_points">adicionar pontos</string>
+    <string name="score_info_remove_points">remover pontos</string>
+    <string name="score_info_values_header">valores cartas/canastras</string>
+
+    <!-- Adicionar pontos -->
+    <string name="score_info_add_1">• Insira todas as cartas e canastras baixadas na mesa.</string>
+    <string name="score_info_add_2">• Use os botões “+” e “−” para ajustar a quantidade.</string>
+    <string name="score_info_add_3">• Ative “Morto” se tiver pego a segunda mão.</string>
+    <string name="score_info_add_4">• Ative “Batida” se você encerrou a partida.</string>
+    <string name="score_info_add_5">• Após o preenchimento, clique em “PRÓXIMO”.</string>
+
+    <!-- Remover pontos -->
+    <string name="score_info_remove_1">• Insira todas as cartas que ficaram na mão.</string>
+    <string name="score_info_remove_2">• Elas serão descontadas da pontuação.</string>
+    <string name="score_info_remove_3">• Use os botões “+” e “−” para ajustar a quantidade.</string>
+    <string name="score_info_remove_4">• Ao finalizar, clique em “CALCULAR PONTUAÇÃO”.</string>
+
+    <!-- Valores das cartas e canastras -->
+    <string name="score_info_value_1">• 8–9–10–J–Q–K (10 pontos)</string>
+    <string name="score_info_value_2">• 3–4–5–6–7 (5 pontos)</string>
+    <string name="score_info_value_3">• Curinga 2 e Joker (20 pontos)</string>
+    <string name="score_info_value_4">• Ás (15 pontos)</string>
+    <string name="score_info_value_5">• Canastra Limpa (200 pontos)</string>
+    <string name="score_info_value_6">• Canastra Suja (100 pontos)</string>
+    <string name="score_info_value_7">• Canastra Real (500 pontos)</string>
+    <string name="score_info_value_8">• Canastra Ás a Ás (1000 pontos)</string>
+    <string name="score_info_value_9">• Morto (100 pontos)</string>
+    <string name="score_info_value_10">• Batida (100 pontos)</string>
+
+    <!-- ========== calculate_score.xml (labels) ========== -->
+    <string name="points_10">8–9–10–J–Q–K</string>
+    <string name="points_5">3–4–5–6–7</string>
+    <string name="points_20">Curinga (2 e Joker)</string>
+    <string name="points_15">Ás (A)</string>
+    <string name="clean_canasta">Canastra Limpa</string>
+    <string name="dirty_canasta">Canastra Suja</string>
+    <string name="royal_canasta">Canastra Real</string>
+    <string name="as_canasta">Canastra Ás a Ás</string>
+    <string name="second_hand">Morto</string>
+    <string name="going_out">Batida</string>
+
+    <!-- ========== Acessibilidade geral ========== -->
+    <string name="accessibility_info_icon_description">Informações</string>
+    <string name="accessibility_no_cards">Nenhuma carta adicionada</string>
+
+    <plurals name="accessibility_total_cards">
+        <item quantity="one">uma carta adicionada</item>
+        <item quantity="other">%d cartas adicionadas</item>
+    </plurals>
+
+    <!-- Plurals e mensagens para canastras -->
+    <!-- Suja -->
+    <string name="accessibility_no_dirty_canasta">Nenhuma canastra suja adicionada</string>
+    <plurals name="accessibility_total_dirty_canasta">
+        <item quantity="one">uma canastra suja adicionada</item>
+        <item quantity="other">%d canastras sujas adicionadas</item>
+    </plurals>
+
+    <!-- Limpa -->
+    <string name="accessibility_no_clean_canasta">Nenhuma canastra limpa adicionada</string>
+    <plurals name="accessibility_total_clean_canasta">
+        <item quantity="one">Uma canastra limpa adicionada</item>
+        <item quantity="other">%d canastras limpas adicionadas</item>
+    </plurals>
+
+    <!-- Real -->
+    <string name="accessibility_no_royal_canasta">Nenhuma canastra real adicionada</string>
+    <plurals name="accessibility_total_royal_canasta">
+        <item quantity="one">Uma canastra real adicionada</item>
+        <item quantity="other">%d canastras reais adicionadas</item>
+    </plurals>
+
+    <!-- Ás a Ás -->
+    <string name="accessibility_no_as_canasta">Nenhuma canastra de ás adicionada</string>
+    <plurals name="accessibility_total_as_canasta">
+        <item quantity="one">Uma canastra de Ás a Ás adicionada</item>
+        <item quantity="other">%d canastras de Ás a Ás adicionadas</item>
+    </plurals>
+
+    <!-- Botões de acessibilidade para ajuste de pontuação -->
+    <!-- (Agrupado por tipo de pontuação) -->
+    <string name="accessibility_remove_10_points">Remover uma carta do 8 ao K</string>
+    <string name="accessibility_add_10_points">Adicionar uma carta do 8 ao K</string>
+    <string name="accessibility_remove_5_points">Remover uma carta do 3 ao 7</string>
+    <string name="accessibility_add_5_points">Adicionar uma carta do 3 ao 7</string>
+    <string name="accessibility_remove_20_points">Remover um curinga</string>
+    <string name="accessibility_add_20_points">Adicionar um curinga</string>
+    <string name="accessibility_remove_15_points">Remover um ás</string>
+    <string name="accessibility_add_15_points">Adicionar um ás</string>
+
+    <!-- Botões de acessibilidade para canastras -->
+    <string name="accessibility_remove_clean_canasta">Remover uma canastra limpa</string>
+    <string name="accessibility_add_clean_canasta">Adicionar uma canastra limpa</string>
+    <string name="accessibility_remove_dirty_canasta">Remover uma canastra suja</string>
+    <string name="accessibility_add_dirty_canasta">Adicionar uma canastra suja</string>
+    <string name="accessibility_remove_royal_canasta">Remover uma canastra real</string>
+    <string name="accessibility_add_royal_canasta">Adicionar uma canastra real</string>
+    <string name="accessibility_remove_as_canasta">Remover uma canastra de Ás a Ás</string>
+    <string name="accessibility_add_as_canasta">Adicionar uma canastra de Ás a Ás</string>
+    <string name="accessibility_switch_dead_description">Alternar morto</string>
+    <string name="accessibility_switch_hit_description">Alternar batida</string>
+
+    <!-- ========== Dialogs ========== -->
+    <!-- Novo nome (custom_dialog_new_name.xml) -->
+    <string name="accessibility_button_save_new_name">Salvar novo nome do jogador</string>
+    <string name="hint_field_new_name">Digite novo nome…</string>
+
+    <!-- Confirmação (custom_dialog_confirmation.xml) -->
+    <string name="accessibility_confirmation_action">Confirmar ação</string>
+
+    <!-- ========== Acessibilidade - Histórico de partidas ========== -->
+    <string name="accessibility_result_win_with_name">%1$s, venceu</string>
+    <string name="accessibility_result_lose_with_name">%1$s, perdeu</string>
+    <string name="accessibility_result_draw">Empatou</string>
+    <string name="accessibility_result_invalid">Resultado inválido</string>
+    <string name="accessibility_player_score">%1$s: %2$d pontos</string>
+</resources>

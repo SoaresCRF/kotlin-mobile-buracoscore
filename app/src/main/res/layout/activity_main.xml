@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activity"
+    android:gravity="center"
+    tools:context=".ui.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/TitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:drawableTopCompat="@drawable/logo_main_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        style="@style/PlayerRowLayout"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <ImageView
+            android:id="@+id/imageEditPlayerNameA"
+            style="@style/EditImage"
+            android:contentDescription="@string/accessibility_edit_player_name"
+            app:srcCompat="@drawable/ic_edit_player_name" />
+
+        <TextView
+            android:id="@+id/textPlayerA"
+            style="@style/PlayerNameText"
+            tools:text="Jogador A" />
+
+        <TextView
+            android:id="@+id/textPointsA"
+            style="@style/PlayerPointsText"
+            android:text="@string/zero" />
+
+        <ImageView
+            android:id="@+id/imageStartA"
+            style="@style/StartImage"
+            android:contentDescription="@string/accessibility_score_screen"
+            app:srcCompat="@drawable/cl_start" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        style="@style/PlayerRowLayout"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <ImageView
+            android:id="@+id/imageEditPlayerNameB"
+            style="@style/EditImage"
+            android:contentDescription="@string/accessibility_edit_player_name"
+            app:srcCompat="@drawable/ic_edit_player_name" />
+
+        <TextView
+            android:id="@+id/textPlayerB"
+            style="@style/PlayerNameText"
+            tools:text="Jogador B" />
+
+        <TextView
+            android:id="@+id/textPointsB"
+            style="@style/PlayerPointsText"
+            android:text="@string/zero" />
+
+        <ImageView
+            android:id="@+id/imageStartB"
+            style="@style/StartImage"
+            android:contentDescription="@string/accessibility_score_screen"
+            app:srcCompat="@drawable/cl_start" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSaveScore"
+        style="@style/MainButton"
+        android:text="@string/save_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <ImageView
+        android:id="@+id/imageMatchHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/accessibility_view_history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSaveScore"
+        app:srcCompat="@drawable/ic_match_history" />
+
+    <ImageView
+        android:id="@+id/imageQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/accessibility_canasta_rules"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMatchHistory"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_question" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

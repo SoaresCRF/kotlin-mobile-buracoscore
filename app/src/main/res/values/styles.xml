@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================= -->
+    <!-- Estilos de Texto - Títulos, Subtítulos e Itens de Texto -->
+    <!-- ============================================================= -->
+
+    <!-- Estilo para o título principal (App Name) -->
+    <style name="TitleText">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estilo para os cabeçalhos de seção -->
+    <style name="TextHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Estilo para subtítulos -->
+    <style name="SubTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Estilo para itens de texto (corpo de regras, etc) -->
+    <style name="TextItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <!-- Estilo para TextViews de título de pontuação -->
+    <style name="TextViewTitle">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Estilo para TextViews de quantidade (usado na pontuação) -->
+    <style name="TextViewQuantity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ============================================================= -->
+    <!-- Estilos de Layouts - LinearLayouts, Containers Horizontais -->
+    <!-- ============================================================= -->
+
+    <!-- Estilo para LinearLayouts que representam a linha de cada jogador -->
+    <style name="PlayerRowLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Estilo para layouts horizontais com margem padrão -->
+    <style name="HorizontalItemLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+    <!-- ============================================================= -->
+    <!-- Estilos de TextViews específicas - Nome e Pontos de Jogador -->
+    <!-- ============================================================= -->
+
+    <!-- Estilo para o nome dos jogadores -->
+    <style name="PlayerNameText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estilo para os pontos dos jogadores -->
+    <style name="PlayerPointsText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ============================================================= -->
+    <!-- Estilos de Botões e Ações -->
+    <!-- ============================================================= -->
+
+    <!-- Estilo para o botão principal (Salvar Pontuação) -->
+    <style name="MainButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:backgroundTint">@color/button</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ============================================================= -->
+    <!-- Estilos de Imagens (ImageViews) -->
+    <!-- ============================================================= -->
+
+    <!-- Estilo para ImageViews de edição de nome do jogador -->
+    <style name="EditImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <!-- Estilo para ImageViews de Start (início da partida) -->
+    <style name="StartImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">6</item>
+    </style>
+
+    <!-- Estilo para ImageViews usadas para adicionar/remover pontos -->
+    <style name="ImageViewPoints">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <!-- ============================================================= -->
+    <!-- Estilo para Switches (Morto, Batida, etc) -->
+    <!-- ============================================================= -->
+
+    <style name="SwitchStyle">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="thumbTint">@color/switch_thumb_selector</item>
+        <item name="trackTint">@color/switch_track_selector</item>
+    </style>
+
+    <!-- ============================================================= -->
+    <!-- Estilos para Dialog  -->
+    <!-- ============================================================= -->
+
+    <!-- Estilo de Dialog com fundo transparente e sem bordas -->
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

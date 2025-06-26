@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Ação" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/light_gray"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Nome jogador" />
+
+            <ImageView
+                android:id="@+id/imageInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:contentDescription="@string/accessibility_info_icon_description"
+                app:srcCompat="@drawable/ic_info" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            style="@style/HorizontalItemLayout"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/textValues10points"
+                style="@style/TextViewTitle"
+                android:text="@string/points_10" />
+
+            <ImageView
+                android:id="@+id/imageRemoveCard10points"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_remove_10_points"
+                app:srcCompat="@drawable/ic_remove_points" />
+
+            <TextView
+                android:id="@+id/textQtdCard10points"
+                style="@style/TextViewQuantity"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/imageAddCard10points"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_add_10_points"
+                app:srcCompat="@drawable/ic_add_points" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/HorizontalItemLayout">
+
+            <TextView
+                android:id="@+id/textValues5points"
+                style="@style/TextViewTitle"
+                android:text="@string/points_5" />
+
+            <ImageView
+                android:id="@+id/imageRemoveCard5points"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_remove_5_points"
+                app:srcCompat="@drawable/ic_remove_points" />
+
+            <TextView
+                android:id="@+id/textQtdCard5points"
+                style="@style/TextViewQuantity"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/imageAddCard5points"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_add_5_points"
+                app:srcCompat="@drawable/ic_add_points" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/HorizontalItemLayout">
+
+            <TextView
+                android:id="@+id/textValues20points"
+                style="@style/TextViewTitle"
+                android:text="@string/points_20" />
+
+            <ImageView
+                android:id="@+id/imageRemoveCard20points"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_remove_20_points"
+                app:srcCompat="@drawable/ic_remove_points" />
+
+            <TextView
+                android:id="@+id/textQtdCard20points"
+                style="@style/TextViewQuantity"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/imageAddCard20points"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_add_20_points"
+                app:srcCompat="@drawable/ic_add_points" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/HorizontalItemLayout">
+
+            <TextView
+                android:id="@+id/textValues15points"
+                style="@style/TextViewTitle"
+                android:text="@string/points_15" />
+
+            <ImageView
+                android:id="@+id/imageRemoveCard15points"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_remove_15_points"
+                app:srcCompat="@drawable/ic_remove_points" />
+
+            <TextView
+                android:id="@+id/textQtdCard15points"
+                style="@style/TextViewQuantity"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/imageAddCard15points"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_add_15_points"
+                app:srcCompat="@drawable/ic_add_points" />
+        </LinearLayout>
+
+        <!-- Canastras repetem o mesmo padrão das pontuações -->
+        <LinearLayout
+            android:id="@+id/linearLayoutCleanCanasta"
+            style="@style/HorizontalItemLayout">
+
+            <TextView
+                android:id="@+id/textCleanCanasta"
+                style="@style/TextViewTitle"
+                android:text="@string/clean_canasta" />
+
+            <ImageView
+                android:id="@+id/imageRemoveCleanCanasta"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_remove_clean_canasta"
+                app:srcCompat="@drawable/ic_remove_points" />
+
+            <TextView
+                android:id="@+id/textQtdCleanCanasta"
+                style="@style/TextViewQuantity"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/imageAddCleanCanasta"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_add_clean_canasta"
+                app:srcCompat="@drawable/ic_add_points" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDirtyCanasta"
+            style="@style/HorizontalItemLayout">
+
+            <TextView
+                android:id="@+id/textDirtyCanasta"
+                style="@style/TextViewTitle"
+                android:text="@string/dirty_canasta" />
+
+            <ImageView
+                android:id="@+id/imageRemoveDirtyCanasta"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_remove_dirty_canasta"
+                app:srcCompat="@drawable/ic_remove_points" />
+
+            <TextView
+                android:id="@+id/textQtdDirtyCanasta"
+                style="@style/TextViewQuantity"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/imageAddDirtyCanasta"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_add_dirty_canasta"
+                app:srcCompat="@drawable/ic_add_points" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRoyalCanasta"
+            style="@style/HorizontalItemLayout">
+
+            <TextView
+                android:id="@+id/textRoyalCanasta"
+                style="@style/TextViewTitle"
+                android:text="@string/royal_canasta" />
+
+            <ImageView
+                android:id="@+id/imageRemoveRoyalCanasta"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_remove_royal_canasta"
+                app:srcCompat="@drawable/ic_remove_points" />
+
+            <TextView
+                android:id="@+id/textQtdRoyalCanasta"
+                style="@style/TextViewQuantity"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/imageAddRoyalCanasta"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_add_royal_canasta"
+                app:srcCompat="@drawable/ic_add_points" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAsCanasta"
+            style="@style/HorizontalItemLayout">
+
+            <TextView
+                android:id="@+id/textAsCanasta"
+                style="@style/TextViewTitle"
+                android:text="@string/as_canasta" />
+
+            <ImageView
+                android:id="@+id/imageRemoveAsCanasta"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_remove_as_canasta"
+                app:srcCompat="@drawable/ic_remove_points" />
+
+            <TextView
+                android:id="@+id/textQtdAsCanasta"
+                style="@style/TextViewQuantity"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/imageAddAsCanasta"
+                style="@style/ImageViewPoints"
+                android:contentDescription="@string/accessibility_add_as_canasta"
+                app:srcCompat="@drawable/ic_add_points" />
+        </LinearLayout>
+
+        <!-- Switches -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchSecondHand"
+            style="@style/SwitchStyle"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/accessibility_switch_dead_description"
+            android:text="@string/second_hand" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchGoingOut"
+            style="@style/SwitchStyle"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/accessibility_switch_hit_description"
+            android:text="@string/going_out" />
+
+        <Button
+            android:id="@+id/buttonAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/button"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Ação button" />
+    </LinearLayout>
+</ScrollView>
